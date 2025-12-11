@@ -23,10 +23,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup CMake
-        uses: kitware/setup-cmake@v3
-        with:
-          cmake-version: 'latest'
+      - name: Check CMake
+        run: cmake --version || true
+
+      - name: Ensure CMake (Ubuntu/macOS)
+        if: matrix.os != 'windows-latest'
+        run: |
+          if ! command -v cmake >/dev/null 2>&1; then
+            if [ "$(uname)" = "Darwin" ]; then
+              brew install cmake
+            else
+              sudo apt-get update
+              sudo apt-get install -y cmake
+            fi
+          fi
+
+      - name: Ensure CMake (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: powershell
+        run: |
+          if (-not (Get-Command cmake -ErrorAction SilentlyContinue)) {
+            choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=System'
+          }
 
       - name: Run CI script (Linux/macOS)
         if: matrix.os != 'windows-latest'
