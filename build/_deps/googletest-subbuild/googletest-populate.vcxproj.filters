@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\9e9d62cfd3d1e934686635136b01aea0\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\2283c0c42f8f96699ddf2154709043a9\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\ad36d78b6d28c151981d177c44f68ba5\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\acer\Desktop\csad2526KI407KovalOleksandrVolodymyrovych9\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{270BB099-9376-3B4A-AC90-DDE95A27BBF3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

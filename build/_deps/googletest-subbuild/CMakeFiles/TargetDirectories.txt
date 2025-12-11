@@ -1,0 +1,3 @@
+C:/Users/acer/Desktop/csad2526KI407KovalOleksandrVolodymyrovych9/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/Users/acer/Desktop/csad2526KI407KovalOleksandrVolodymyrovych9/build/_deps/googletest-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/acer/Desktop/csad2526KI407KovalOleksandrVolodymyrovych9/build/_deps/googletest-subbuild/CMakeFiles/ZERO_CHECK.dir
