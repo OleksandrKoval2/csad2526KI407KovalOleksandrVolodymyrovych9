@@ -1,0 +1,70 @@
+name: CMake CI
+
+on:
+  push:
+    branches:
+      - '**/*develop*'
+      - '**/*master*'
+  pull_request:
+    branches:
+      - '**/*develop*'
+      - '**/*master*'
+
+jobs:
+  cross_build:
+    name: Build and Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check CMake
+        run: cmake --version || true
+
+      - name: Ensure CMake (Ubuntu/macOS)
+        if: matrix.os != 'windows-latest'
+        run: |
+          if ! command -v cmake >/dev/null 2>&1; then
+            if [ "$(uname)" = "Darwin" ]; then
+              brew install cmake
+            else
+              sudo apt-get update
+              sudo apt-get install -y cmake
+            fi
+          fi
+
+      - name: Ensure CMake (Windows)
+        if: matrix.os == 'windows-latest'
+        shell: powershell
+        run: |
+          if (-not (Get-Command cmake -ErrorAction SilentlyContinue)) {
+            choco install -y cmake --installargs 'ADD_CMAKE_TO_PATH=System'
+          }
+
+      - name: Run CI script (Linux/macOS)
+        if: matrix.os != 'windows-latest'
+        run: |
+          chmod +x ./ci.sh
+          ./ci.sh
+
+      - name: Run CI script (Windows)
+        if: matrix.os == 'windows-latest'
+        run: |
+          ci.bat
+        shell: cmd
+
+      - name: Build Success
+        if: success()
+        run: echo "✅ Build succeeded"
+
+      - name: Upload build artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-${{ matrix.os }}
+          path: build
